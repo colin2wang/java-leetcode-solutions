@@ -13,15 +13,15 @@ public class NameFormatter {
     }
 
     public static String getLengthString(String oriString, int length) {
-        String retString = oriString;
+        StringBuilder retString = new StringBuilder(oriString);
         if (oriString.length() == length) {
-            return retString;
+            return retString.toString();
         } else {
             for (int i = 0; i < length - oriString.length(); i++) {
-                retString = "0" + retString;
+                retString.insert(0, "0");
             }
         }
-        return retString;
+        return retString.toString();
     }
 
     public static void main(String[] args) {
