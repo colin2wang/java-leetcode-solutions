@@ -18,8 +18,8 @@ foreach ($file in $testFiles) {
     $content = $content -replace "import org.junit.Assert;", "import org.junit.jupiter.api.Assertions;"
     $content = $content -replace "Assert\.", "Assertions."
     
-    # 写入更新后的内容
-    Set-Content -Path $file.FullName -Value $content
+    # 写入更新后的内容（UTF-8 编码，不带 BOM）
+    [System.IO.File]::WriteAllText($file.FullName, $content, [System.Text.UTF8Encoding]::new($false))
 }
 
 Write-Host "All test files have been converted from JUnit 4 to JUnit 5!"

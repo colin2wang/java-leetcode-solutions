@@ -94,7 +94,8 @@ $fileContent = $templateContent -replace "CLASS_NAME", $className
 
 # Write new file
 try {
-    $fileContent | Out-File -FilePath $outputPath -Encoding UTF8
+    # Explicitly use UTF-8 without BOM
+    [System.IO.File]::WriteAllText($outputPath, $fileContent, [System.Text.UTF8Encoding]::new($false))
     Write-Host "Successfully created file: $outputPath" -ForegroundColor Green
 } catch {
     Write-Host "Error: Failed to create file: $_" -ForegroundColor Red
