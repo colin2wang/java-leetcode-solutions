@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class S0028_Implement_Strstr {
 
@@ -35,12 +35,12 @@ public class S0028_Implement_Strstr {
     @Test
     public void test() {
         Solution solution = new Solution();
-//        Assert.assertEquals(2, solution.strStr("hello", "ll"));
-//        Assert.assertEquals(-1, solution.strStr("aaaaa", "bba"));
-//        Assert.assertEquals(1, solution.strStr("baa", "a"));
-//        Assert.assertEquals(0, solution.strStr("aaa", "a"));
-//        Assert.assertEquals(0, solution.strStr("", ""));
-//        Assert.assertEquals(3, solution.strStr("aabaaa", "aaa"));
-        Assert.assertEquals(4, solution.strStr("mississippi", "issip"));
+//        Assertions.assertEquals(2, solution.strStr("hello", "ll"));
+//        Assertions.assertEquals(-1, solution.strStr("aaaaa", "bba"));
+//        Assertions.assertEquals(1, solution.strStr("baa", "a"));
+//        Assertions.assertEquals(0, solution.strStr("aaa", "a"));
+//        Assertions.assertEquals(0, solution.strStr("", ""));
+//        Assertions.assertEquals(3, solution.strStr("aabaaa", "aaa"));
+        Assertions.assertEquals(4, solution.strStr("mississippi", "issip"));
     }
 }

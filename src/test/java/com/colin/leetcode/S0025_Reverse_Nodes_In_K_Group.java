@@ -1,6 +1,6 @@
 package com.colin.leetcode;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Stack;
 
@@ -24,9 +24,9 @@ class ListNode {
 public class S0025_Reverse_Nodes_In_K_Group {
 
     /**
-     * 示例：
+     * 示例
      *
-     * 给你这个链表：1->2->3->4->5
+     * 给你这个链表 ->2->3->4->5
      *
      * 当k= 2 时，应当返回: 2->1->4->3->5
      *

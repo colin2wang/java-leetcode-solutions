@@ -1,6 +1,6 @@
 package com.colin.leetcode;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.*;
 
@@ -73,3 +73,4 @@ public class S0047_Permutations_Ii {
         System.out.println(solution.permuteUnique(new int[] {1, 2, 3}));
     }
 }
+

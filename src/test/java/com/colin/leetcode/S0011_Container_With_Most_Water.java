@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class S0011_Container_With_Most_Water {
 
@@ -25,11 +25,11 @@ public class S0011_Container_With_Most_Water {
     public void test() {
         Solution solution = new Solution();
 
-        Assert.assertEquals(49, solution.maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}));
-        Assert.assertEquals(1, solution.maxArea(new int[]{1, 1}));
-        Assert.assertEquals(16, solution.maxArea(new int[]{4, 3, 2, 1, 4}));
-        Assert.assertEquals(2, solution.maxArea(new int[]{1, 2, 1}));
-        Assert.assertEquals(0, solution.maxArea(new int[]{1}));
-        Assert.assertEquals(0, solution.maxArea(new int[]{}));
+        Assertions.assertEquals(49, solution.maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}));
+        Assertions.assertEquals(1, solution.maxArea(new int[]{1, 1}));
+        Assertions.assertEquals(16, solution.maxArea(new int[]{4, 3, 2, 1, 4}));
+        Assertions.assertEquals(2, solution.maxArea(new int[]{1, 2, 1}));
+        Assertions.assertEquals(0, solution.maxArea(new int[]{1}));
+        Assertions.assertEquals(0, solution.maxArea(new int[]{}));
     }
 }

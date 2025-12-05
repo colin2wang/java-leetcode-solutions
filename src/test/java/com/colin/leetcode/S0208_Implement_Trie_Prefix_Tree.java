@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -76,23 +76,23 @@ public class S0208_Implement_Trie_Prefix_Tree {
              */
             Trie trie = new Trie();
             trie.insert("a");
-            Assert.assertTrue(trie.search("a"));
-            Assert.assertTrue(trie.startsWith("a"));
+            Assertions.assertTrue(trie.search("a"));
+            Assertions.assertTrue(trie.startsWith("a"));
         }
 
         {
             Trie trie = new Trie();
             trie.insert("apple");
-            Assert.assertTrue(trie.search("apple"));
-            Assert.assertFalse(trie.search("app"));
-            Assert.assertTrue(trie.startsWith("app"));
+            Assertions.assertTrue(trie.search("apple"));
+            Assertions.assertFalse(trie.search("app"));
+            Assertions.assertTrue(trie.startsWith("app"));
             trie.insert("app");
-            Assert.assertTrue(trie.search("app"));
+            Assertions.assertTrue(trie.search("app"));
         }
 
         {
             Trie trie = new Trie();
-            Assert.assertFalse(trie.startsWith("app"));
+            Assertions.assertFalse(trie.startsWith("app"));
         }
 
         {
@@ -102,12 +102,12 @@ public class S0208_Implement_Trie_Prefix_Tree {
              */
             Trie trie = new Trie();
             trie.insert("hello");
-            Assert.assertFalse(trie.search("hell"));
-            Assert.assertFalse(trie.search("helloa"));
-            Assert.assertTrue(trie.search("hello"));
-            Assert.assertTrue(trie.startsWith("hell"));
-            Assert.assertFalse(trie.startsWith("helloa"));
-            Assert.assertTrue(trie.startsWith("hello"));
+            Assertions.assertFalse(trie.search("hell"));
+            Assertions.assertFalse(trie.search("helloa"));
+            Assertions.assertTrue(trie.search("hello"));
+            Assertions.assertTrue(trie.startsWith("hell"));
+            Assertions.assertFalse(trie.startsWith("helloa"));
+            Assertions.assertTrue(trie.startsWith("hello"));
         }
     }
 }

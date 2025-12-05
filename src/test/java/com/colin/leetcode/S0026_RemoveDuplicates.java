@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
@@ -27,7 +27,7 @@ public class S0026_RemoveDuplicates {
         Solution solution = new Solution();
         int nums[] = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
         int expecteds[] = {0, 1, 2, 3, 4};
-        Assert.assertEquals(5, solution.removeDuplicates(nums));
-        Assert.assertArrayEquals(expecteds, Arrays.copyOf(nums, 5));
+        Assertions.assertEquals(5, solution.removeDuplicates(nums));
+        Assertions.assertArrayEquals(expecteds, Arrays.copyOf(nums, 5));
     }
 }

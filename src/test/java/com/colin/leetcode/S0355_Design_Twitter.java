@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.*;
 
@@ -82,12 +82,12 @@ public class S0355_Design_Twitter {
     public void test_0() {
         Twitter twitter = new Twitter();
         twitter.postTweet(1, 5);
-        Assert.assertEquals(Arrays.asList(5), twitter.getNewsFeed(1));
+        Assertions.assertEquals(Arrays.asList(5), twitter.getNewsFeed(1));
         twitter.follow(1, 2);
         twitter.postTweet(2, 6);
-        Assert.assertEquals(Arrays.asList(6, 5), twitter.getNewsFeed(1));
+        Assertions.assertEquals(Arrays.asList(6, 5), twitter.getNewsFeed(1));
         twitter.unfollow(1, 2);
-        Assert.assertEquals(Arrays.asList(5), twitter.getNewsFeed(1));
+        Assertions.assertEquals(Arrays.asList(5), twitter.getNewsFeed(1));
     }
 
     @Test
@@ -99,7 +99,7 @@ public class S0355_Design_Twitter {
         Twitter twitter = new Twitter();
         twitter.postTweet(1, 5);
         twitter.postTweet(1, 3);
-        Assert.assertEquals(Arrays.asList(3, 5), twitter.getNewsFeed(1));
+        Assertions.assertEquals(Arrays.asList(3, 5), twitter.getNewsFeed(1));
     }
 
     protected Integer[][] testWithCommands(String[] commands, Integer[][] values) {

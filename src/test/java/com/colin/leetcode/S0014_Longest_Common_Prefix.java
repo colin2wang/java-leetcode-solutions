@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class S0014_Longest_Common_Prefix {
 
@@ -37,9 +37,9 @@ public class S0014_Longest_Common_Prefix {
     public void test() {
         Solution solution = new Solution();
 
-        Assert.assertEquals("a", solution.longestCommonPrefix(new String[] {"ab", "a"}));
-        Assert.assertEquals("abc", solution.longestCommonPrefix(new String[] {"abc", "abc", "abcabc"}));
-        Assert.assertEquals("", solution.longestCommonPrefix(new String[] {"abc", "def", "ghi"}));
-        Assert.assertEquals("a", solution.longestCommonPrefix(new String[] {"abc", "aaa", "asdf"}));
+        Assertions.assertEquals("a", solution.longestCommonPrefix(new String[] {"ab", "a"}));
+        Assertions.assertEquals("abc", solution.longestCommonPrefix(new String[] {"abc", "abc", "abcabc"}));
+        Assertions.assertEquals("", solution.longestCommonPrefix(new String[] {"abc", "def", "ghi"}));
+        Assertions.assertEquals("a", solution.longestCommonPrefix(new String[] {"abc", "aaa", "asdf"}));
     }
 }

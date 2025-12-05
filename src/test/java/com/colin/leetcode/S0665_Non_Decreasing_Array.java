@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class S0665_Non_Decreasing_Array {
     // TODO: ?
@@ -33,11 +33,11 @@ public class S0665_Non_Decreasing_Array {
     @Test
     public void test() {
         Solution solution = new Solution();
-        Assert.assertEquals(true, solution.checkPossibility(new int[]{2, 3, 3, 2, 4}));
-        Assert.assertEquals(false, solution.checkPossibility(new int[]{3, 4, 2, 3}));
-        Assert.assertEquals(false, solution.checkPossibility(new int[]{4, 2, 1}));
-        Assert.assertEquals(true, solution.checkPossibility(new int[]{4, 2, 3}));
-        Assert.assertEquals(true, solution.checkPossibility(new int[]{1, 2, 3, 4}));
-        Assert.assertEquals(false, solution.checkPossibility(new int[]{4, 3, 2, 1}));
+        Assertions.assertEquals(true, solution.checkPossibility(new int[]{2, 3, 3, 2, 4}));
+        Assertions.assertEquals(false, solution.checkPossibility(new int[]{3, 4, 2, 3}));
+        Assertions.assertEquals(false, solution.checkPossibility(new int[]{4, 2, 1}));
+        Assertions.assertEquals(true, solution.checkPossibility(new int[]{4, 2, 3}));
+        Assertions.assertEquals(true, solution.checkPossibility(new int[]{1, 2, 3, 4}));
+        Assertions.assertEquals(false, solution.checkPossibility(new int[]{4, 3, 2, 1}));
     }
 }

@@ -14,8 +14,9 @@ This repository contains Java solutions to LeetCode problems. Each solution is a
 ## Features
 
 - **Consistent Structure**: Each problem solution follows the same class structure with embedded test cases.
-- **Problem Creator**: A utility to automatically generate new problem files with the correct naming format.
+- **Problem Creator**: Utilities to automatically generate new problem files with the correct naming format (both Java and PowerShell versions available).
 - **Unit Tests**: All solutions include JUnit tests to validate the implementations.
+- **Test Converter**: PowerShell script to convert JUnit 4 tests to JUnit 5.
 
 ## Getting Started
 
@@ -37,7 +38,9 @@ mvn test
 
 ## Creating a New Problem Solution
 
-The project includes a utility to create new problem files with the correct naming convention. Follow these steps:
+The project provides two utilities to create new problem files with the correct naming convention:
+
+### Option 1: Java ClassCreator
 
 1. Run the `ClassCreator` class
 2. Enter the LeetCode problem number when prompted
@@ -53,6 +56,71 @@ two-sum
 ```
 
 This will create a new file named `S0001_Two_Sum.java` in the test directory.
+
+### Option 2: PowerShell Script
+
+The project also includes a PowerShell script `create_leetcode_class.ps1` for Windows users, which provides the same functionality with command line support.
+
+#### Using Command Line Parameters
+
+```powershell
+.\create_leetcode_class.ps1 1 two-sum
+```
+
+#### Using Console Input
+
+```powershell
+.\create_leetcode_class.ps1
+```
+
+Then follow the prompts to enter the problem number and name.
+
+#### Viewing Help
+
+```powershell
+.\create_leetcode_class.ps1 -Help
+```
+
+## PowerShell Scripts
+
+### 1. JUnit 4 to JUnit 5 Converter
+
+The `convert_junit4_to_junit5.ps1` script automatically converts all JUnit 4 test files to JUnit 5 format. This includes:
+- Updating import statements
+- Converting `@Test` annotations
+- Replacing assertion methods
+
+**Usage:**
+
+```powershell
+.\convert_junit4_to_junit5.ps1
+```
+
+### 2. LeetCode Class Creator
+
+The `create_leetcode_class.ps1` script generates new LeetCode problem files with the correct naming convention:
+- Converts problem numbers to 4-digit format
+- Transforms kebab-case names to PascalCase
+- Creates files with the appropriate template
+
+**Features:**
+- Supports both command line parameters and console input
+- Validates input parameters
+- Checks if the file already exists
+- Creates files with proper structure
+
+**Usage:**
+
+```powershell
+# With command line parameters
+.\create_leetcode_class.ps1 <problem_number> <problem_name>
+
+# Example
+.\create_leetcode_class.ps1 1 two-sum
+
+# With console input
+.\create_leetcode_class.ps1
+```
 
 ## Solution Format
 

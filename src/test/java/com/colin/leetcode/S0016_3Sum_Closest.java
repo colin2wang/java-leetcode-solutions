@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class S0016_3Sum_Closest {
 
@@ -34,8 +34,8 @@ public class S0016_3Sum_Closest {
     public void test() {
         Solution solution = new Solution();
 
-        Assert.assertEquals(2, solution.threeSumClosest(new int[]{-1, 2, 1, -4}, 1));
-        Assert.assertEquals(2, solution.threeSumClosest(new int[]{1, 1, 1, 0}, -100));
-        Assert.assertEquals(3, solution.threeSumClosest(new int[]{1, 1, 1, 0}, 100));
+        Assertions.assertEquals(2, solution.threeSumClosest(new int[]{-1, 2, 1, -4}, 1));
+        Assertions.assertEquals(2, solution.threeSumClosest(new int[]{1, 1, 1, 0}, -100));
+        Assertions.assertEquals(3, solution.threeSumClosest(new int[]{1, 1, 1, 0}, 100));
     }
 }

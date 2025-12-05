@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class S1266_Minimum_Time_Visiting_All_Points {
 
@@ -22,8 +22,8 @@ public class S1266_Minimum_Time_Visiting_All_Points {
     @Test
     public void test() {
         Solution solution = new Solution();
-        Assert.assertEquals(7, solution.minTimeToVisitAllPoints(new int[][] {{1,1},{3,4},{-1,0}}));
-        Assert.assertEquals(5, solution.minTimeToVisitAllPoints(new int[][]  {{3,2},{-2,2}}));
-        Assert.assertEquals(0, solution.minTimeToVisitAllPoints(new int[][]  {{3,2}}));
+        Assertions.assertEquals(7, solution.minTimeToVisitAllPoints(new int[][] {{1,1},{3,4},{-1,0}}));
+        Assertions.assertEquals(5, solution.minTimeToVisitAllPoints(new int[][]  {{3,2},{-2,2}}));
+        Assertions.assertEquals(0, solution.minTimeToVisitAllPoints(new int[][]  {{3,2}}));
     }
 }

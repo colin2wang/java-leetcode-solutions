@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class S0008_String_To_Integer_Atoi {
 
@@ -38,14 +38,14 @@ public class S0008_String_To_Integer_Atoi {
     @Test
     public void test() {
         Solution solution = new Solution();
-        Assert.assertEquals(11, solution.myAtoi("+11e530408314"));
-        Assert.assertEquals(2147483647, solution.myAtoi("20000000000000000000"));
-        Assert.assertEquals(-12, solution.myAtoi("  -0012a42"));
-        Assert.assertEquals(0, solution.myAtoi("ww-4193 with words"));
-        Assert.assertEquals(4193, solution.myAtoi("4193 with words"));
-        Assert.assertEquals(-4193, solution.myAtoi("-4193 with words"));
-        Assert.assertEquals(-42, solution.myAtoi("   -42"));
-        Assert.assertEquals(-2147483648, solution.myAtoi("-91283472332"));
+        Assertions.assertEquals(11, solution.myAtoi("+11e530408314"));
+        Assertions.assertEquals(2147483647, solution.myAtoi("20000000000000000000"));
+        Assertions.assertEquals(-12, solution.myAtoi("  -0012a42"));
+        Assertions.assertEquals(0, solution.myAtoi("ww-4193 with words"));
+        Assertions.assertEquals(4193, solution.myAtoi("4193 with words"));
+        Assertions.assertEquals(-4193, solution.myAtoi("-4193 with words"));
+        Assertions.assertEquals(-42, solution.myAtoi("   -42"));
+        Assertions.assertEquals(-2147483648, solution.myAtoi("-91283472332"));
 
     }
 }

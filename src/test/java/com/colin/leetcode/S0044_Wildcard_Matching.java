@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class S0044_Wildcard_Matching {
 
@@ -42,7 +42,7 @@ public class S0044_Wildcard_Matching {
     @Test
     public void test() {
         Solution solution = new Solution();
-        Assert.assertTrue(solution.isMatch("abcbcdc", "a*cdc"));
-        Assert.assertTrue(solution.isMatch("abc", "a?c"));
+        Assertions.assertTrue(solution.isMatch("abcbcdc", "a*cdc"));
+        Assertions.assertTrue(solution.isMatch("abc", "a?c"));
     }
 }

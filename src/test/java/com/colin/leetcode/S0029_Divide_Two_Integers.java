@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class S0029_Divide_Two_Integers {
 
@@ -25,9 +25,9 @@ public class S0029_Divide_Two_Integers {
     public void test() {
         Solution solution = new Solution();
 
-        Assert.assertEquals(-2147483648, solution.divide(-2147483648, 1));
-        Assert.assertEquals(2147483647, solution.divide(-2147483648, -1));
-        Assert.assertEquals(3, solution.divide(10, 3));
-        Assert.assertEquals(-2, solution.divide(7, -3));
+        Assertions.assertEquals(-2147483648, solution.divide(-2147483648, 1));
+        Assertions.assertEquals(2147483647, solution.divide(-2147483648, -1));
+        Assertions.assertEquals(3, solution.divide(10, 3));
+        Assertions.assertEquals(-2, solution.divide(7, -3));
     }
 }

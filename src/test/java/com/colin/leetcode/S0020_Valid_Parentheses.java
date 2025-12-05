@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.Stack;
 
@@ -52,11 +52,12 @@ public class S0020_Valid_Parentheses {
     @Test
     public void test() {
         Solution solution = new Solution();
-        Assert.assertEquals(true, solution.isValid("[][]"));
-        Assert.assertEquals(true, solution.isValid("({[]})"));
-        Assert.assertEquals(true, solution.isValid("()[]{}"));
-        Assert.assertEquals(false, solution.isValid("[]]]"));
-        Assert.assertEquals(false, solution.isValid("[(])"));
-        Assert.assertEquals(false, solution.isValid("sdf"));
+        Assertions.assertEquals(true, solution.isValid("[][]"));
+        Assertions.assertEquals(true, solution.isValid("({[]})"));
+        Assertions.assertEquals(true, solution.isValid("()[]{}"));
+        Assertions.assertEquals(false, solution.isValid("[]]]"));
+        Assertions.assertEquals(false, solution.isValid("[(])"));
+        Assertions.assertEquals(false, solution.isValid("sdf"));
     }
 }
+

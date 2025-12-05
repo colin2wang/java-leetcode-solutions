@@ -1,6 +1,6 @@
 package com.colin.leetcode;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class S0002_Add_Two_Numbers {
 
@@ -68,7 +68,7 @@ public class S0002_Add_Two_Numbers {
     @Test
     public void test() {
         Solution solution = new Solution();
-//        Assert.assertArrayEquals(expecteds, solution.twoSum(nums, 9));
+//        Assertions.assertArrayEquals(expecteds, solution.twoSum(nums, 9));
         ListNode lRet = solution.addTwoNumbers(build(1000), build(20));
         System.out.println(lRet);
     }

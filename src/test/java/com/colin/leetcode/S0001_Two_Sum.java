@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -26,6 +26,6 @@ public class S0001_Two_Sum {
         Solution solution = new Solution();
         int nums[] = {2,7,11,15};
         int expecteds[] = {0,1};
-        Assert.assertArrayEquals(expecteds, solution.twoSum(nums, 9));
+        Assertions.assertArrayEquals(expecteds, solution.twoSum(nums, 9));
     }
 }

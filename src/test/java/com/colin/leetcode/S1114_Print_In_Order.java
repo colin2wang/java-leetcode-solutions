@@ -1,6 +1,6 @@
 package com.colin.leetcode;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.CountDownLatch;
 
@@ -37,3 +37,4 @@ public class S1114_Print_In_Order {
     public void test() {
     }
 }
+

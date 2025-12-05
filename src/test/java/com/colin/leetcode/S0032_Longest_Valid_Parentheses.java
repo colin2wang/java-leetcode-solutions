@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.Stack;
 
@@ -104,19 +104,20 @@ public class S0032_Longest_Valid_Parentheses {
     @Test
     public void test() {
         Solution solution = new Solution();
-        Assert.assertEquals(2, solution.longestValidParentheses("())"));
-        Assert.assertEquals(4, solution.longestValidParentheses("()()"));
-        Assert.assertEquals(2, solution.longestValidParentheses("()(()"));
-        Assert.assertEquals(2, solution.longestValidParentheses("(()"));
-        Assert.assertEquals(4, solution.longestValidParentheses("))()()"));
-        Assert.assertEquals(2, solution.longestValidParentheses("()("));
-        Assert.assertEquals(0, solution.longestValidParentheses(")))))))"));
-        Assert.assertEquals(0, solution.longestValidParentheses("((((((("));
-        Assert.assertEquals(0, solution.longestValidParentheses("("));
-        Assert.assertEquals(0, solution.longestValidParentheses("))))"));
-        Assert.assertEquals(6, solution.longestValidParentheses("()()()"));
-        Assert.assertEquals(6, solution.longestValidParentheses("(()())"));
-        Assert.assertEquals(14, solution.longestValidParentheses("(()())()()()()"));
-        Assert.assertEquals(14, solution.longestValidParentheses("(()())()()()()))()()"));
+        Assertions.assertEquals(2, solution.longestValidParentheses("())"));
+        Assertions.assertEquals(4, solution.longestValidParentheses("()()"));
+        Assertions.assertEquals(2, solution.longestValidParentheses("()(()"));
+        Assertions.assertEquals(2, solution.longestValidParentheses("(()"));
+        Assertions.assertEquals(4, solution.longestValidParentheses("))()()"));
+        Assertions.assertEquals(2, solution.longestValidParentheses("()("));
+        Assertions.assertEquals(0, solution.longestValidParentheses(")))))))"));
+        Assertions.assertEquals(0, solution.longestValidParentheses("((((((("));
+        Assertions.assertEquals(0, solution.longestValidParentheses("("));
+        Assertions.assertEquals(0, solution.longestValidParentheses("))))"));
+        Assertions.assertEquals(6, solution.longestValidParentheses("()()()"));
+        Assertions.assertEquals(6, solution.longestValidParentheses("(()())"));
+        Assertions.assertEquals(14, solution.longestValidParentheses("(()())()()()()"));
+        Assertions.assertEquals(14, solution.longestValidParentheses("(()())()()()()))()()"));
     }
 }
+

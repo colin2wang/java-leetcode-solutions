@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -53,11 +53,11 @@ public class S0013_Roman_To_Integer {
     @Test
     public void test() {
         Solution solution = new Solution();
-        Assert.assertEquals(1, solution.romanToInt("I"));
-        Assert.assertEquals(4, solution.romanToInt("IV"));
-        Assert.assertEquals(11, solution.romanToInt("XI"));
-        Assert.assertEquals(58, solution.romanToInt("LVIII"));
-        Assert.assertEquals(1994, solution.romanToInt("MCMXCIV"));
+        Assertions.assertEquals(1, solution.romanToInt("I"));
+        Assertions.assertEquals(4, solution.romanToInt("IV"));
+        Assertions.assertEquals(11, solution.romanToInt("XI"));
+        Assertions.assertEquals(58, solution.romanToInt("LVIII"));
+        Assertions.assertEquals(1994, solution.romanToInt("MCMXCIV"));
 
     }
 }

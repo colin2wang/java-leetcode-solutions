@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class S0007_Reverse_Integer {
 
@@ -20,9 +20,9 @@ public class S0007_Reverse_Integer {
     @Test
     public void test() {
         Solution solution = new Solution();
-        Assert.assertEquals(321, solution.reverse(123));
-        Assert.assertEquals(981, solution.reverse(1890));
-        Assert.assertEquals(-321, solution.reverse(-123));
-        Assert.assertEquals(0, solution.reverse(1534236469));
+        Assertions.assertEquals(321, solution.reverse(123));
+        Assertions.assertEquals(981, solution.reverse(1890));
+        Assertions.assertEquals(-321, solution.reverse(-123));
+        Assertions.assertEquals(0, solution.reverse(1534236469));
     }
 }

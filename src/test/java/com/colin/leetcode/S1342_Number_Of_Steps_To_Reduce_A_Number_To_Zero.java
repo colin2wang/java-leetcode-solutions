@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class S1342_Number_Of_Steps_To_Reduce_A_Number_To_Zero {
 
@@ -23,10 +23,10 @@ public class S1342_Number_Of_Steps_To_Reduce_A_Number_To_Zero {
     @Test
     public void test() {
         Solution solution = new Solution();
-        Assert.assertEquals(0, solution.numberOfSteps(0));
-        Assert.assertEquals(1, solution.numberOfSteps(1));
-        Assert.assertEquals(6, solution.numberOfSteps(14));
-        Assert.assertEquals(4, solution.numberOfSteps(8));
-        Assert.assertEquals(12, solution.numberOfSteps(123));
+        Assertions.assertEquals(0, solution.numberOfSteps(0));
+        Assertions.assertEquals(1, solution.numberOfSteps(1));
+        Assertions.assertEquals(6, solution.numberOfSteps(14));
+        Assertions.assertEquals(4, solution.numberOfSteps(8));
+        Assertions.assertEquals(12, solution.numberOfSteps(123));
     }
 }

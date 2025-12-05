@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -863,10 +863,10 @@ public class S0866_Prime_Palindrome {
 //        System.out.println(solution.isPrime(9));
 //        System.out.println(solution.isPalindrome(9));
 
-        Assert.assertEquals(2, solution.primePalindrome(1));
-        Assert.assertEquals(7, solution.primePalindrome(6));
-        Assert.assertEquals(11, solution.primePalindrome(8));
-        Assert.assertEquals(101, solution.primePalindrome(13));
+        Assertions.assertEquals(2, solution.primePalindrome(1));
+        Assertions.assertEquals(7, solution.primePalindrome(6));
+        Assertions.assertEquals(11, solution.primePalindrome(8));
+        Assertions.assertEquals(101, solution.primePalindrome(13));
 
 //        System.out.println(solution.primePalindrome(9989900));
 

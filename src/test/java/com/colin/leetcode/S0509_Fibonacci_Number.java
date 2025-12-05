@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class S0509_Fibonacci_Number {
 
@@ -35,8 +35,8 @@ public class S0509_Fibonacci_Number {
     public void test() {
         Solution solution = new Solution();
 
-        Assert.assertEquals(1, solution.fib(2));
-        Assert.assertEquals(2, solution.fib(3));
-        Assert.assertEquals(3, solution.fib(4));
+        Assertions.assertEquals(1, solution.fib(2));
+        Assertions.assertEquals(2, solution.fib(3));
+        Assertions.assertEquals(3, solution.fib(4));
     }
 }

@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class S0012_Integer_To_Roman {
 
@@ -39,9 +39,9 @@ public class S0012_Integer_To_Roman {
     public void test() {
         Solution solution = new Solution();
 
-        Assert.assertEquals("I", solution.intToRoman(1));
-        Assert.assertEquals("IV", solution.intToRoman(4));
-        Assert.assertEquals("MCMXCIV", solution.intToRoman(1994));
+        Assertions.assertEquals("I", solution.intToRoman(1));
+        Assertions.assertEquals("IV", solution.intToRoman(4));
+        Assertions.assertEquals("MCMXCIV", solution.intToRoman(1994));
 
     }
 }

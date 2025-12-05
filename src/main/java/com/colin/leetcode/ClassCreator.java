@@ -44,14 +44,31 @@ public class ClassCreator {
     }
 
     public static void main(String[] args) {
+        int index;
+        String original;
+        Scanner scanner;
 
-        Scanner scanner =  new Scanner(System.in);
+        // 检查是否有命令行参数
+        if (args.length >= 2) {
+            // 使用命令行参数
+            try {
+                index = Integer.parseInt(args[0]);
+                original = args[1];
+            } catch (NumberFormatException e) {
+                System.out.println("Error: Invalid problem number format.");
+                printUsage();
+                return;
+            }
+        } else {
+            // 回退到控制台输入
+            scanner = new Scanner(System.in);
+            
+            System.out.println("Input Number:");
+            index = scanner.nextInt();
 
-        System.out.println("Input Number:");
-        int index = scanner.nextInt();
-
-        System.out.println("Input Name:");
-        String original = scanner.next();
+            System.out.println("Input Name:");
+            original = scanner.next();
+        }
 
         String elems[] = original.split(Pattern.quote("-"));
 
@@ -63,5 +80,15 @@ public class ClassCreator {
         }
 
         ClassCreator.createNewProblemFile(name.toString());
+    }
+    
+    /**
+     * 打印使用说明
+     */
+    private static void printUsage() {
+        System.out.println("Usage:");
+        System.out.println("1. Command line: java ClassCreator <problem_number> <problem_name>");
+        System.out.println("   Example: java ClassCreator 1 two-sum");
+        System.out.println("2. Console input: Run without arguments and follow prompts");
     }
 }

@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class S0003_Longest_Substring_Without_Repeating_Characters {
 
@@ -50,11 +50,11 @@ public class S0003_Longest_Substring_Without_Repeating_Characters {
     public void test() {
         Solution solution = new Solution();
 
-        Assert.assertEquals(3, solution.lengthOfLongestSubstring("abcabcbb"));
-        Assert.assertEquals(1, solution.lengthOfLongestSubstring("bbbbb"));
-        Assert.assertEquals(3, solution.lengthOfLongestSubstring("pwwkew"));
-        Assert.assertEquals(1, solution.lengthOfLongestSubstring(" "));
-        Assert.assertEquals(3, solution.lengthOfLongestSubstring("dvdf"));
-        Assert.assertEquals(6, solution.lengthOfLongestSubstring("asjrgapa"));
+        Assertions.assertEquals(3, solution.lengthOfLongestSubstring("abcabcbb"));
+        Assertions.assertEquals(1, solution.lengthOfLongestSubstring("bbbbb"));
+        Assertions.assertEquals(3, solution.lengthOfLongestSubstring("pwwkew"));
+        Assertions.assertEquals(1, solution.lengthOfLongestSubstring(" "));
+        Assertions.assertEquals(3, solution.lengthOfLongestSubstring("dvdf"));
+        Assertions.assertEquals(6, solution.lengthOfLongestSubstring("asjrgapa"));
     }
 }

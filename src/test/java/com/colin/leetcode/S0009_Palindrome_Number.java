@@ -1,7 +1,7 @@
 package com.colin.leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class S0009_Palindrome_Number {
 
@@ -22,10 +22,10 @@ public class S0009_Palindrome_Number {
     @Test
     public void test() {
         Solution solution = new Solution();
-        Assert.assertEquals(true, solution.isPalindrome(121));
-        Assert.assertEquals(true, solution.isPalindrome(123321));
-        Assert.assertEquals(true, solution.isPalindrome(11111));
-        Assert.assertEquals(false, solution.isPalindrome(12345));
-        Assert.assertEquals(false, solution.isPalindrome(-12321));
+        Assertions.assertEquals(true, solution.isPalindrome(121));
+        Assertions.assertEquals(true, solution.isPalindrome(123321));
+        Assertions.assertEquals(true, solution.isPalindrome(11111));
+        Assertions.assertEquals(false, solution.isPalindrome(12345));
+        Assertions.assertEquals(false, solution.isPalindrome(-12321));
     }
 }
